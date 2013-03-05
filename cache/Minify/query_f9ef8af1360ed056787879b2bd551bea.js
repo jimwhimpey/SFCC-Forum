@@ -1,0 +1,1 @@
+a:2:{s:1:"f";s:35:"applications/vanilla/js/settings.js";s:1:"b";s:10:"sfcc-forum";}
