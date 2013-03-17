@@ -12,6 +12,7 @@
             <?php
 			      $Session = Gdn::Session();
 					if ($this->Menu) {
+						$this->Menu->AddLink('Home', T('Home'), 'http://sfcycle.org');
 						$this->Menu->AddLink('Dashboard', T('Dashboard'), '/dashboard/settings', array('Garden.Settings.Manage'));
 						// $this->Menu->AddLink('Dashboard', T('Users'), '/user/browse', array('Garden.Users.Add', 'Garden.Users.Edit', 'Garden.Users.Delete'));
 						$this->Menu->AddLink('Activity', T('Activity'), '/activity');
@@ -43,7 +44,7 @@
 					echo 
 						$Form->Open(array('action' => Url('/search'), 'method' => 'get')),
 						$Form->TextBox('Search'),
-						$Form->Button('Go', array('Name' => '')),
+						$Form->Button('Search', array('Name' => '')),
 						$Form->Close();
 				?></div>
          </div>
@@ -55,7 +56,7 @@
       <div id="Foot">
 			<?php
 				$this->RenderAsset('Foot');
-				echo Wrap(Anchor(T('Powered by Vanilla'), C('Garden.VanillaUrl')), 'div');
+				echo Wrap(Anchor(T('Vanilla'), C('Garden.VanillaUrl')), 'div');
 			?>
 		</div>
    </div>
