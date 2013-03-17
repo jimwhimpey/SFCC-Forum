@@ -43,7 +43,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
    line-height: 1;
    color: black;
-   background: white;
+   background: #212121;
 }
 ol, ul {
    list-style: none;
@@ -71,13 +71,14 @@ body {
 	font-family: 'lucida grande','Lucida Sans Unicode', tahoma, sans-serif;
 	font-size: 75%;
 	line-height: 1.7em;
-   background: #fff;
+   background: #212121;
    margin: 0;
    padding: 0;
    text-align: center;
    font-size: small;
 }
 #Body {
+	overflow: hidden;
    width: 960px;
    text-align: left;
    margin: 15px auto 0;
@@ -116,6 +117,8 @@ h1 {
    font-size:140%;
    font-weight:bold;
    margin-bottom:10px;
+   display: block;
+   color: #FFF;
 }
 h2 {
    font-size:130%;
@@ -440,8 +443,9 @@ a.Small img {
 
 /* =================================================================== Header */
 #Head {
-   background: #38abe3;
+   background: #121212;
    padding: 0;
+   border-bottom: 1px dotted #333;
 }
 .Search:after,
 div#Search:after {
@@ -452,11 +456,13 @@ div#Search:after {
    visibility: hidden;
 }
 body #Head h1 {
-   display: inline-block;
+   display: block;
    font-weight: bold;
    margin: 0;
    padding: 21px 10px 4px 0;
    border: 0;
+   font-family: "Source Sans Pro", Helvetica, sans-serif;
+   font-size: 50px;
 }
 #Head h1 a span {
    font-size: 24px;
@@ -475,9 +481,9 @@ body #Head h1 {
    padding: 0;
 }
 #Head form input.InputBox {
-   width: 204px;
+   width: 212px;
    border: 0;
-   padding: 4px;
+   padding: 3px 4px;
 	margin: 0 6px 0 0;
    background: #fff;
    -moz-border-radius: 2px;
@@ -488,6 +494,8 @@ body #Head h1 {
 	vertical-align: bottom;
 }
 #Head form input.Button {
+	position: relative;
+	top: -1px;
 	font-size: 11px;
 	border: none;
 }
@@ -501,6 +509,7 @@ body #Head h1 {
 #Menu {
    display: inline-block;
    margin-right: 280px;
+   margin-left: -7px;
    vertical-align: bottom;
 }
 #Menu li {
@@ -907,10 +916,11 @@ a.BigButton:focus {
 }
 .DataList .Item {
    margin: 0;
-   padding: 4px 0;
+   padding: 10px;
    border: 0;
 	position: relative;
    border-bottom: 1px solid #bec8cc;
+   background: #FFF;
 }
 .DataList .Item .Item {
    border-bottom: none;
@@ -919,8 +929,8 @@ a.BigButton:focus {
 .MessageList .Options {
    margin: 2px 4px 0 0;
 	position: absolute;
-	right: 0;
-   top: 0;
+	right: 10px;
+   top: 10px;
 }
 .DataList .OptionButton {
 	position: absolute;
@@ -1144,12 +1154,13 @@ conversation messages, etc). */
 .MessageList,
 .MessageList li {
    list-style: none;
-   margin: 0;
+   margin: 0 0 20px 0;
    padding: 0;
+   background: #FFF;
 }
 .MessageList .Item {
    border-bottom: 1px solid #BEC8CC;
-	padding: 10px 10px 4px 10px;
+	padding: 25px;
 }
 .MessageList .Meta {
    font-size: 11px;
@@ -1415,8 +1426,10 @@ body.Profile #Panel {
 }
 form.Activity {
    display: block;
-   padding: 10px 10px 0 10px;
+   padding: 10px;
 	text-align: right;
+	background: #FFF;
+	margin-bottom: 20px;
 }
 form.Activity textarea {
    width: 100%;
@@ -1862,9 +1875,10 @@ div.Popup form ul li label.RadioLabel {
 
 /* =================================================================== Footer */
 #Foot {
+	width: 960px;
    clear: both;
-   text-align: center;
-   margin: 2px 0;
+   text-align: right;
+   margin: 50px auto;
    padding: 4px 9px;
    font-size: 13px;
    color: #ddd;
@@ -1958,7 +1972,8 @@ body.Discussion #Content {
    margin-bottom: 20px;
 }
 ul.Discussion {
-   margin-bottom: 1px;
+   margin-bottom: 20px;
+   background: #FFF;
 }
 /*
   Note: Discussion & Comment Option (dropdown) Menu customizations. The layout
@@ -2153,7 +2168,7 @@ textarea.MultiComplete {
 /* ========================================================= Add Message Form */
 #MessageForm {
 	background: #E9F9FF;
-	padding: 4px 8px 8px;
+	padding: 25px;
 	margin: 1px 0 0;
    border-bottom-left-radius: 2px;
    border-bottom-right-radius: 2px;
@@ -2401,6 +2416,8 @@ body#dashboard_entry_index #Content form,
 .SingleEntryMethod {
 	width: 290px;
 	margin: 0 auto;
+	background: #FFF;
+	padding: 25px;
 }
 .MultipleEntryMethods {
 	width: 500px;

@@ -14,13 +14,12 @@ $Configuration['EnabledApplications']['Conversations'] = 'conversations';
 $Configuration['EnabledApplications']['Vanilla'] = 'vanilla';
 
 // EnabledPlugins
-$Configuration['EnabledPlugins']['GettingStarted'] = 'GettingStarted';
 $Configuration['EnabledPlugins']['HtmLawed'] = 'HtmLawed';
 $Configuration['EnabledPlugins']['Gravatar'] = TRUE;
 $Configuration['EnabledPlugins']['AllViewed'] = TRUE;
 $Configuration['EnabledPlugins']['FileUpload'] = TRUE;
 $Configuration['EnabledPlugins']['VanillaInThisDiscussion'] = TRUE;
-$Configuration['EnabledPlugins']['Minify'] = TRUE;
+$Configuration['EnabledPlugins']['Minify'] = FALSE;
 $Configuration['EnabledPlugins']['PrivateCommunity'] = TRUE;
 $Configuration['EnabledPlugins']['VanillaStats'] = TRUE;
 
@@ -41,7 +40,8 @@ $Configuration['Garden']['RewriteUrls'] = FALSE;
 $Configuration['Garden']['CanProcessImages'] = TRUE;
 $Configuration['Garden']['Installed'] = TRUE;
 $Configuration['Garden']['PrivateCommunity'] = TRUE;
-$Configuration['Garden']['Theme'] = 'default';
+$Configuration['Garden']['Theme'] = 'sfcc';
+$Configuration['Garden']['InputFormatter'] = 'Markdown';
 
 // Plugins
 $Configuration['Plugins']['GettingStarted']['Dashboard'] = '1';
@@ -49,6 +49,7 @@ $Configuration['Plugins']['GettingStarted']['Plugins'] = '1';
 $Configuration['Plugins']['GettingStarted']['Categories'] = '1';
 $Configuration['Plugins']['GettingStarted']['Discussion'] = '1';
 $Configuration['Plugins']['GettingStarted']['Registration'] = '1';
+$Configuration['Plugins']['GettingStarted']['Profile'] = '1';
 $Configuration['Plugins']['FileUpload']['Enabled'] = TRUE;
 
 // Routes
@@ -58,4 +59,4 @@ $Configuration['Routes']['DefaultController'] = 'a:2:{i:0;s:11:"discussions";i:1
 $Configuration['Vanilla']['Version'] = '2.0.18.4';
 $Configuration['Vanilla']['Categories']['Use'] = FALSE;
 
-// Last edited by jimwhimpey (127.0.0.1)2013-03-04 23:26:07
+// Last edited by test (127.0.0.1)2013-03-17 19:23:32
