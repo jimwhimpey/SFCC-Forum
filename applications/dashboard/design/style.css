@@ -1891,6 +1891,7 @@ div.Popup form ul li label.RadioLabel {
    color: #aaa;
 }
 #Foot div {
+	display: none;
 	width: 960px;
 	padding: 6px 0;
 	margin: 20px auto 0;
