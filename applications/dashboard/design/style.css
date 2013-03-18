@@ -913,6 +913,7 @@ a.BigButton:focus {
 /* Note: DataList is used in search results, vanilla discussions & drafts */
 .Empty {
    margin: 10px 0;
+   color: #FFF;
 }
 .DataList .Item {
    margin: 0;
@@ -1891,7 +1892,7 @@ div.Popup form ul li label.RadioLabel {
    color: #aaa;
 }
 #Foot div {
-	display: none;
+	display: non;
 	width: 960px;
 	padding: 6px 0;
 	margin: 20px auto 0;
