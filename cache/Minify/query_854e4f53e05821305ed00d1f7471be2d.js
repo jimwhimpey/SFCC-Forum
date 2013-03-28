@@ -1,1 +1,0 @@
-a:2:{s:1:"f";s:146:"applications/vanilla/js/bookmark.js,applications/vanilla/js/discussions.js,applications/vanilla/js/options.js,js/library/jquery.gardenmorepager.js";s:1:"b";s:10:"sfcc-forum";}
